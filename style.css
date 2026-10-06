@@ -18,3 +18,82 @@
 @media(max-width:800px){.ecogn-layout{grid-template-columns:1fr;gap:32px}.ecogn-section{padding:64px 0}.ecogn-description{max-width:none}.ecogn-origin{max-width:none}.ecogn-intro h2{font-size:36px}.ecogn-features{padding:30px}.clients-section{padding:64px 0}.clients-heading{grid-template-columns:1fr;gap:22px}.clients-heading>p{max-width:none}.client-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:520px){.client-grid{grid-template-columns:1fr}.client-card{min-height:232px}.clients-heading h2{font-size:34px;letter-spacing:-1.2px}}
 @media(max-width:420px){.ecogn-intro h2{font-size:32px;letter-spacing:-1px}.ecogn-features{padding:26px 22px}.ecogn-feature{gap:14px}.ecogn-intro .eyebrow{font-size:12px}.ecogn-cta{width:100%}}
+
+/* 2026 institutional redesign — inspired by the information architecture of LicenciarBio */
+:root{--institutional:#145a36;--institutional-dark:#073b28;--institutional-bright:#66ad3f;--institutional-soft:#f3f7f3}
+.contact-bar{background:var(--institutional-dark);color:#fff;font-size:13px;letter-spacing:.15px}
+.contact-bar-inner{min-height:38px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.contact-bar-inner>div{display:flex;align-items:center;gap:24px}
+.contact-bar a,.contact-bar span{color:#dceadf}
+.contact-bar a:hover{color:#fff;text-decoration:underline;text-underline-offset:3px}
+.header{top:0;background:#fff;border-bottom:0;box-shadow:0 3px 18px #092d1e12}
+.header-inner{height:92px}
+.brand{width:222px}
+.desktop-nav{gap:28px;text-transform:uppercase;font-size:12px;letter-spacing:.65px}
+.desktop-nav a{padding-block:35px;position:relative}
+.desktop-nav a:after{content:'';position:absolute;left:0;right:100%;bottom:25px;height:2px;background:var(--institutional-bright);transition:right .2s}
+.desktop-nav a:hover:after{right:0}
+.header-cta{border-radius:2px;text-transform:uppercase;letter-spacing:.45px;background:var(--institutional);border-color:var(--institutional)}
+.hero-shell{position:relative;background:linear-gradient(90deg,rgba(4,42,28,.93) 0%,rgba(5,49,32,.78) 48%,rgba(7,47,31,.24) 100%),url('/assets/retroescavadeira.jpeg') center 48%/cover no-repeat;color:#fff}
+.hero-shell:after{content:'';position:absolute;inset:auto 0 0;height:110px;background:linear-gradient(0deg,rgba(2,31,21,.35),transparent);pointer-events:none}
+.hero{display:block;min-height:600px;padding-top:118px;padding-bottom:145px;position:relative;z-index:1}
+.hero-content{max-width:720px}
+.hero .eyebrow{color:#c5e5b4;margin-bottom:24px}
+.hero h1{color:#fff;font-size:clamp(50px,5.4vw,75px);max-width:710px;letter-spacing:-3px}
+.hero h1 span{color:#b1dd8d}
+.hero-copy{color:#edf5ef;max-width:620px;font-size:19px}
+.hero-actions .button{background:#5cab3f;border-color:#5cab3f;color:#fff;border-radius:2px;text-transform:uppercase;font-size:13px;letter-spacing:.4px}
+.hero-actions .button:hover{background:#70bc51}
+.hero-actions .text-link{color:#fff;border-color:#adc4b4}
+.hero-assurance{color:#e0ede4}
+.hero-location{color:#c3d8c9}
+.hero-visual{display:none}
+.expertise-strip{position:relative;z-index:4;margin-top:-58px;background:transparent;border:0}
+.strip-inner{min-height:116px;background:#fff;box-shadow:0 16px 42px #082f201f;padding:0 34px;display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+.strip-inner>span{min-height:116px;display:flex;align-items:center;justify-content:center;gap:14px;border-right:1px solid #dce7df;text-align:center;font-size:13px;letter-spacing:.2px;color:#294d38}
+.strip-inner>span:last-child{border-right:0}
+.strip-inner b{font-size:27px;color:var(--institutional-bright);font-weight:400}
+.section{padding-block:96px}
+.section-heading{align-items:center}
+.section-heading .eyebrow,.clients-section .eyebrow{color:var(--institutional-bright)}
+.section-heading h2:after,.clients-heading h2:after{content:'';display:block;width:58px;height:3px;background:var(--institutional-bright);margin-top:22px}
+.services-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;border:0}
+.service-card,.service-help{border:1px solid #dce6df;border-top:4px solid var(--institutional-bright);border-radius:0;padding:32px 28px;background:#fff;box-shadow:0 8px 26px #092d1e0a}
+.service-card:hover{background:#fff;box-shadow:0 14px 38px #092d1e17;border-color:#b5cbbb;border-top-color:var(--institutional)}
+.service-top svg{background:#edf5ed;border-radius:50%;padding:8px;width:46px;height:46px;color:var(--institutional)}
+.service-card h3{font-size:26px;min-height:62px}
+.service-link{background:transparent;color:var(--institutional);padding:13px 0;border-radius:0;border-top:1px solid #dce7df;text-transform:uppercase;font-size:12px;letter-spacing:.35px}
+.service-link:hover{background:transparent;color:#2d873e}
+.service-help{background:var(--institutional-soft);border-top-color:var(--institutional)}
+.about{background:linear-gradient(110deg,#073b28,#135a36);position:relative;overflow:hidden}
+.about:after{content:'ECOMAIS';position:absolute;right:-20px;bottom:-44px;color:#fff;font-size:130px;font-weight:700;letter-spacing:-7px;opacity:.035;pointer-events:none}
+.clients-section{background:#f6f8f6;color:var(--text);padding:96px 0}
+.clients-heading h2{color:var(--text)}
+.clients-heading h2 span{color:#526e5d}
+.clients-heading>p{color:var(--muted)}
+.client-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.client-card{min-height:230px;border:1px solid #dce6df;box-shadow:0 6px 20px #082f2008;justify-content:center;gap:20px;transition:transform .2s,box-shadow .2s}
+.client-card:hover{transform:translateY(-3px);box-shadow:0 13px 30px #082f2012}
+.client-card h3{min-height:auto;justify-content:center}
+.client-emblem{width:135px;height:135px;background-size:875px 569px}
+.logo-exercito{background-position:-166px -192px}.logo-marinha{background-position:-371px -192px}.logo-abeas{background-position:-574px -192px}.logo-cultura{background-position:-268px -374px}.logo-park{background-position:-473px -374px}
+.client-logo-img{width:158px;height:138px;display:block;object-fit:contain}
+.prefeitura-logo{width:175px}.coca-logo{width:145px}
+.clients-note{color:#75887b}
+.clients-section+.section{border-top:0}
+.ecogn-section{background:#fff}
+footer{background:#073b28;color:#fff;border:0;padding-top:62px}
+.footer-top{display:grid;grid-template-columns:1.5fr .7fr 1fr;align-items:start;gap:72px;padding-bottom:48px}
+.footer-brand{background:#fff;padding:9px 13px;width:230px}
+.footer-about p,.footer-column span{color:#bcd0c2}
+.footer-about p{margin-top:22px;font-size:15px}
+.footer-column{display:flex;flex-direction:column;align-items:flex-start;gap:10px}
+.footer-column h3{font-size:15px;text-transform:uppercase;letter-spacing:1px;color:#8fcd70;margin-bottom:10px}
+.footer-column a,.footer-column span{font-size:14px}
+.footer-column a:hover{color:#aee18f}
+.footer-bottom{border-top:1px solid #315d49;color:#abc2b3}
+
+@media(max-width:1100px){.desktop-nav{gap:17px}.desktop-nav a{letter-spacing:.25px}.header-cta{display:none}.client-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:900px){.contact-bar-inner{min-height:36px}.hero{min-height:550px;padding-top:90px}.services-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.footer-top{grid-template-columns:1.2fr .7fr 1fr;gap:35px}}
+@media(max-width:680px){.contact-bar{display:none}.header-inner{height:78px}.brand{width:190px}.hero{min-height:530px;padding-top:74px;padding-bottom:115px}.hero h1{font-size:clamp(43px,12vw,60px);letter-spacing:-2.2px}.hero-copy{font-size:17px}.expertise-strip{margin-top:-44px}.strip-inner{grid-template-columns:1fr 1fr;padding:0 18px;min-height:0}.strip-inner>span{min-height:82px;border-bottom:1px solid #dce7df}.strip-inner>span:nth-child(2){border-right:0}.strip-inner>span:nth-child(3),.strip-inner>span:nth-child(4){border-bottom:0}.strip-inner b{font-size:22px}.services-grid{grid-template-columns:1fr}.service-card h3{min-height:0}.client-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.client-card{min-height:205px;padding-inline:12px}.client-emblem{width:116px;height:116px;background-size:752px 489px}.logo-exercito{background-position:-143px -165px}.logo-marinha{background-position:-319px -165px}.logo-abeas{background-position:-494px -165px}.logo-cultura{background-position:-230px -321px}.logo-park{background-position:-407px -321px}.client-logo-img{width:130px;height:112px}.prefeitura-logo{width:145px}.footer-top{grid-template-columns:1fr;gap:32px}.footer-bottom{display:block}.footer-bottom span{display:block;margin-bottom:8px}}
+@media(max-width:420px){.hero{min-height:500px;padding-top:62px}.hero-actions{align-items:flex-start;flex-direction:column}.hero-assurance{gap:6px 12px}.client-grid{grid-template-columns:1fr}.client-card{min-height:220px}.strip-inner>span{font-size:12px;gap:9px}}
